@@ -9,7 +9,7 @@ our $VERSION = '0.002';
 
 use Moo;
 use Dancer2::Core::Types;
-use JSON -convert_blessed_universally;
+use JSON;
 
 #--------------------------------------------------------------------------#
 # Attributes
@@ -44,7 +44,7 @@ with 'Dancer2::Core::Role::SessionFactory::File';
 sub _freeze_to_handle {
     my ( $self, $fh, $data ) = @_;
     binmode $fh;
-    print {$fh} $self->_freeze($data);
+    print {$fh} $self->_freeze( +{ %{$data} } );
     return;
 }
 
