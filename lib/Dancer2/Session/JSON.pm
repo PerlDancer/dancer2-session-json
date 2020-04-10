@@ -5,7 +5,7 @@ use warnings;
 package Dancer2::Session::JSON;
 # ABSTRACT: Dancer 2 session storage in files with JSON
 
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 use Moo;
 use Dancer2::Core::Types;
