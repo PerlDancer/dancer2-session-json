@@ -16,7 +16,7 @@ my %WriteMakefileArgs = (
   "MIN_PERL_VERSION" => "5.008001",
   "NAME" => "Dancer2::Session::JSON",
   "PREREQ_PM" => {
-    "Dancer2" => 0,
+    "Dancer2" => "0.200000",
     "Dancer2::Core::Role::SessionFactory::File" => 0,
     "Dancer2::Core::Types" => 0,
     "JSON" => 0,
@@ -25,7 +25,7 @@ my %WriteMakefileArgs = (
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
-    "Dancer2" => 0,
+    "Dancer2" => "0.200000",
     "ExtUtils::MakeMaker" => 0,
     "File::Basename" => 0,
     "File::Spec" => 0,
@@ -35,7 +35,7 @@ my %WriteMakefileArgs = (
     "Test::More" => 0,
     "YAML" => 0
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -43,7 +43,7 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Dancer2" => 0,
+  "Dancer2" => "0.200000",
   "Dancer2::Core::Role::SessionFactory::File" => 0,
   "Dancer2::Core::Types" => 0,
   "ExtUtils::MakeMaker" => 0,
